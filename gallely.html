@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>パンフギャラリー - 瑶子の部屋</title>
+    <style>
+        /* 共通デザイン */
+        body { background-image: url('yokohaikei.jpg'); background-repeat: repeat; background-size: 100px; background-attachment: fixed; color: #4a4a4a; margin: 0; font-family: sans-serif; }
+        .wrapper { display: flex; max-width: 1000px; margin: 40px auto; gap: 20px; padding: 0 20px; }
+        .sidebar { width: 250px; background-color: rgba(255, 255, 255, 0.85); padding: 20px; border-radius: 15px; height: fit-content; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li { margin-bottom: 15px; }
+        .sidebar a { text-decoration: none; color: #4a4a4a; font-weight: bold; display: block; padding: 10px; background-color: #f0f8ff; border-radius: 8px; text-align: center; transition: 0.3s; }
+        .sidebar a:hover { background-color: #ffb6c1; color: white; }
+        .main-content { flex: 1; background-color: rgba(255, 255, 255, 0.85); padding: 40px; border-radius: 15px; }
+        h1 { text-align: center; color: #333; margin-top: 0; }
+        h2 { border-bottom: 2px solid #ffb6c1; padding-bottom: 5px; }
+
+        /* 👇 ギャラリー専用のオシャレなデザイン！ */
+        .gallery-grid {
+            display: grid;
+            /* 画面の幅に合わせて、自動で2列や3列に整列してくれます */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px; /* 画像と画像のスキマ */
+            margin-top: 30px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* 角を少し丸く */
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* ほんのり影をつける */
+            transition: transform 0.3s; /* 動くスピード */
+        }
+        /* マウスを乗せるとフワッと大きくなる！ */
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) { .wrapper { flex-direction: column; } .sidebar { width: auto; } }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <div class="sidebar">
+            <h3 style="text-align: center;">MENU</h3>
+            <ul>
+                <li><a href="index.html">プロフィール</a></li>
+                <li><a href="history.html">これまで組んだバンド</a></li>
+                <li><a href="human.html">バンド組んだ人ランキング</a></li>
+                <li><a href="gallery.html">パンフギャラリー</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>パンフギャラリー</h2>
+            <p>今まで作ってきた思い出のパンフたちです。抜粋して紹介。</p>
+            
+            <div class="gallery-grid">
+                <img src="pamphlet1.jpg" alt="パンフレット1">
+                <img src="pamphlet2.jpg" alt="パンフレット2">
+                <img src="pamphlet3.jpg" alt="パンフレット3">
+                <img src="pamphlet4.jpg" alt="パンフレット4">
+                <img src="pamphlet5.jpg" alt="パンフレット5">
+                <img src="pamphlet6.jpg" alt="パンフレット6">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
