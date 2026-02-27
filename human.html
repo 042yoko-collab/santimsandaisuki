@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>バンド組んだ人ランキング - 瑶子の部屋</title>
+    <style>
+        /* 👇 ここも他のページと全く同じデザイン指定です */
+        body { background-image: url('yokohaikei.jpg'); background-repeat: repeat; background-size: 100px; background-attachment: fixed; color: #4a4a4a; margin: 0; font-family: sans-serif; }
+        .wrapper { display: flex; max-width: 1000px; margin: 40px auto; gap: 20px; padding: 0 20px; }
+        .sidebar { width: 250px; background-color: rgba(255, 255, 255, 0.85); padding: 20px; border-radius: 15px; height: fit-content; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li { margin-bottom: 15px; }
+        .sidebar a { text-decoration: none; color: #4a4a4a; font-weight: bold; display: block; padding: 10px; background-color: #f0f8ff; border-radius: 8px; text-align: center; transition: 0.3s; }
+        .sidebar a:hover { background-color: #ffb6c1; color: white; }
+        .main-content { flex: 1; background-color: rgba(255, 255, 255, 0.85); padding: 40px; border-radius: 15px; }
+        h1 { text-align: center; color: #333; margin-top: 0; }
+        h2 { border-bottom: 2px solid #ffb6c1; padding-bottom: 5px; }
+        
+        /* 👇 ランキング用のちょっとした飾りデザイン（王冠マークなどのおまけ） */
+        .rank-list li {
+            font-size: 1.1em; /* 文字を少し大きく */
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #fffaf0; /* 少し温かみのある背景色 */
+            border-radius: 8px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.1); /* ほんのり影をつける */
+        }
+        .rank-1 { color: #d4af37; font-size: 1.3em !important; font-weight: bold; } /* 1位は金色で大きく */
+        
+        @media (max-width: 768px) { .wrapper { flex-direction: column; } .sidebar { width: auto; } }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        
+        <div class="sidebar">
+            <h3 style="text-align: center;">MENU</h3>
+            <ul>
+                <li><a href="index.html">プロフィール</a></li>
+                <li><a href="history.html">これまで組んだバンド</a></li>
+                <li><a href="human.html">バンド組んだ人ランキング</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>バンド組んだ人ランキング</h2>
+            <p>これまで一緒に音を鳴らしてくれた最高の人たち！</p>
+            
+            <ul class="rank-list" style="list-style: none; padding-left: 0;">
+                <li class="rank-1">👑 <strong>1位：</strong>いぬつかさん（22回）</li>
+                <li>🥈 <strong>2位：</strong>あやか・あやね（14回）</li>
+                <li>🏅 <strong>4位：</strong>おじさん・わがあやこ（13回）</li>
+                <li>🏅 <strong>6位：</strong>だいとさん（12回）</li>
+            </ul>
+
+            <p style="margin-top: 30px; font-size: 0.9em; color: #666;">
+                ※同率順位があるため、順位が飛んでいるところがあります。
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
