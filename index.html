@@ -2,104 +2,21 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>瑶子の部屋</title>
+    <title>瑶子の部屋 - プロフィール</title>
     <style>
-        body {
-            background-image: url('yokohaikei.jpg'); /* 自分の画像ファイル名 */
-            background-repeat: repeat;       /* 繰り返し敷き詰める */
-            background-size: 100px;          /* 背景画像のサイズ */
-            background-attachment: fixed;    
-            color: #4a4a4a;
-            margin: 0;
-            font-family: sans-serif;
-        }
-
-        /* 👇 全体を「左」と「右」に分けるための大きな箱 */
-        .wrapper {
-            display: flex;        /* 横並びにする */
-            max-width: 1000px;    /* 全体の最大幅 */
-            margin: 40px auto;    /* 真ん中に配置 */
-            gap: 20px;            /* 左右の箱の隙間 */
-            padding: 0 20px;
-        }
-
-        /* 👇 左側のメニュー（タブ）のデザイン */
-        .sidebar {
-            width: 250px;
-            background-color: rgba(255, 255, 255, 0.85); /* 半透明の白 */
-            padding: 20px;
-            border-radius: 15px;
-            height: fit-content; /* 中身に合わせて高さを変える */
-        }
-
-        .sidebar ul {
-            list-style: none; /* 箇条書きの黒丸を消す */
-            padding: 0;
-        }
-
-        .sidebar li {
-            margin-bottom: 15px;
-        }
-
-        /* メニューのボタンのデザイン */
-        .sidebar a {
-            text-decoration: none; /* リンクの下線を消す */
-            color: #4a4a4a;
-            font-weight: bold;
-            display: block;
-            padding: 10px;
-            background-color: #f0f8ff; /* 薄い青色 */
-            border-radius: 8px;
-            text-align: center;
-            transition: 0.3s; /* 色が変わるスピードをふんわりさせる */
-        }
-
-        /* マウスを乗せたときの色 */
-        .sidebar a:hover {
-            background-color: #ffb6c1; /* ピンク色に変わる */
-            color: white;
-        }
-
-        /* 👇 右側のメインコンテンツのデザイン */
-        .main-content {
-            flex: 1; /* 余った右側の幅を全部使う */
-            background-color: rgba(255, 255, 255, 0.85);
-            padding: 40px;
-            border-radius: 15px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-top: 0;
-        }
-
-        h2 {
-            border-bottom: 2px solid #ffb6c1; /* 見出しの下にピンクの線を引く */
-            padding-bottom: 5px;
-        }
-
-        .profile-wrap {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-            margin-top: 30px;
-            margin-bottom: 40px;
-        }
-
-        /* 👇 スマホなど画面が狭いときは、左右ではなく上下に並べ替える設定 */
-        @media (max-width: 768px) {
-            .wrapper {
-                flex-direction: column;
-            }
-            .sidebar {
-                width: auto;
-            }
-            .profile-wrap {
-                flex-direction: column;
-            }
-        }
+        /* 👇今までのデザインそのままです！ */
+        body { background-image: url('yokohaikei.jpg'); background-repeat: repeat; background-size: 100px; background-attachment: fixed; color: #4a4a4a; margin: 0; font-family: sans-serif; }
+        .wrapper { display: flex; max-width: 1000px; margin: 40px auto; gap: 20px; padding: 0 20px; }
+        .sidebar { width: 250px; background-color: rgba(255, 255, 255, 0.85); padding: 20px; border-radius: 15px; height: fit-content; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li { margin-bottom: 15px; }
+        .sidebar a { text-decoration: none; color: #4a4a4a; font-weight: bold; display: block; padding: 10px; background-color: #f0f8ff; border-radius: 8px; text-align: center; transition: 0.3s; }
+        .sidebar a:hover { background-color: #ffb6c1; color: white; }
+        .main-content { flex: 1; background-color: rgba(255, 255, 255, 0.85); padding: 40px; border-radius: 15px; }
+        h1 { text-align: center; color: #333; margin-top: 0; }
+        h2 { border-bottom: 2px solid #ffb6c1; padding-bottom: 5px; }
+        .profile-wrap { display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 30px; margin-bottom: 40px; }
+        @media (max-width: 768px) { .wrapper, .profile-wrap { flex-direction: column; } .sidebar { width: auto; } }
     </style>
 </head>
 <body>
@@ -109,18 +26,18 @@
         <div class="sidebar">
             <h3 style="text-align: center;">MENU</h3>
             <ul>
-                <li><a href="#profile">プロフィール</a></li>
-                <li><a href="#history">これまで組んだバンド</a></li>
-                <li><a href="#human">バンド組んだ人ランキング</a></li>
+                <li><a href="index.html">プロフィール</a></li>
+                <li><a href="history.html">これまで組んだバンド</a></li>
+                <li><a href="human.html">バンド組んだ人ランキング</a></li>
             </ul>
         </div>
 
         <div class="main-content">
-            <h1 id="profile">遠藤 瑶子のホームページ</h1>
+            <h1>遠藤 瑶子のホームページ</h1>
             <p style="text-align: center;">卒コン当日までに書くよーー（たぶん）</p>
 
             <div class="profile-wrap">
-                <img src="yoko.jpg" alt="遠藤 瑶子" width="200" ;">
+                <img src="yoko.jpg" alt="遠藤 瑶子" width="200">
                 <div>
                     <h2>PROFILE</h2>
                     <ul>
@@ -129,67 +46,9 @@
                     </ul>
                 </div>
             </div>
-
-            <h2 id="history">これまで組んだバンド</h2>
-            <ul>
-           <h3>2022年</h3>
-            <ul>
-                <li>ガールズバンドに不純物</li>
-                <li>うまいふえ</li>
-                <li>素潜りヤンキーズ</li>
-                <li>HAYAOKI</li>
-            </ul>
-
-            <h3>2023年</h3>
-            <ul>
-                <li>おさぼりカマキリ</li>
-                <li>芳賀サファリパーク</li>
-                <li>モラトリアム</li>
-                <li>SAKURAEBI</li>
-                <li>パンをもぐっ！</li>
-                <li>大森瑤子</li>
-                <li>エンドヲヨウコ</li>
-                <li>ライブ後飲みタイム</li>
-            </ul>
-
-            <h3>2024年</h3>
-            <ul>
-                <li>バスピクション</li>
-                <li>呼び捨てはずくて"ちゃん"</li>
-                <li>半熟のたまご（引き継ぎ）</li>
-                <li>The safe phychedelic</li>
-                <li>SENRENCE SPRING</li>
-                <li>超☆脱法</li>
-                <li>ザサンオールスターズ</li>
-            </ul>
-
-            <h3>2025年</h3>
-            <ul>
-                <li>ヒステリック初期衝動</li>
-                <li>ORANGE陰児</li>
-                <li>♡ハルマキ♡</li>
-                <li>HEADNARUDES</li>
-                <li>mao</li>
-                <li>音友アイドル</li>
-            </ul>
-
-            <h3>2026年</h3>
-            <ul>
-                <li>さくにやさしく</li>
-            </ul>
-
-
-            <h2 id="human" style="margin-top: 50px;">バンド組んだ人ランキング</h2>
-            <ul>
-               <li> <strong>1位：</strong>いぬつかさん（22）</li>
-               <li> <strong>2位：</strong>あやか・あやね（14）</li>
-                <li><strong>4位：</strong>おじさん・わがあやこ（13）</li>
-                <li><strong>6位：</strong>だいとさん（12）</li>
-            </ul>
         </div>
 
     </div>
 
 </body>
-
 </html>
